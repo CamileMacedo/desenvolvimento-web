@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Este é o título do documento!</title>
+    <title>Título do documento!</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -14,17 +14,17 @@
         <h1>Este é o elemento <strong>h1</strong> e está dentro da tag <strong>header</strong></h1>
 
         <div id="menu">
-            <a href="#headers-h2-h6"> Títulos em HTMl</a>
+            <a href="#headers"> Títulos e algumas tags</a>
             <a href="#listas">Listas Ordenadas e Desordenadas</a>
             <a href="#images">Imagens</a>
             <a href="#links">Links</a>
         </div>
 
-        <p style="color: black; margin: 0;">Contém somente os elemetos vistos em aula.</p>
+        <p style="color: black; margin: 0;">Contém somente os elemetos vistos em aula e nos exercícios.</p>
     </header>
 
     <div id="content">
-        <div id="headers-h2-h6">
+        <div id="headers">
             <h2 class="title-menu">Títulos</h2>
             <h2>Este é o elemento h2</h2>
             <h3>Este é o elemento h3</h3>
@@ -35,6 +35,40 @@
 
         <p>Este é o elemento <strong>p</strong> (parágrafo)</p>
 
+<div id="some-tags">
+    <h2 class="title-menu">Algumas Tags</h2>
+    <ul>        <li>A tag que pula a linha que é o <strong>br</strong> </br> utilizado neste texto</li>
+        <li>A tag <strong>strong</strong> deixa o texto em negrito. </li>
+        <li>A tag <strong>hr</strong> que faz uma linha horizontal dentro da div selecionada, como a seguir:</p></li>
+        <hr>
+        <li>
+            <pre>
+            A tag <strong>pre</strong> preserva a identação do que
+    
+            estamos escrevendo          como no texto atual
+    
+            assim como espaços                   e linhas.
+            </pre>
+        </li>
+        <li><p>A tag <strong>mark</strong> deixa o texto <mark>grifado.</mark> </p></li>
+        <li>A tag <strong>sub</strong> deixa o texto subescrito como o 2 do H<sub>2</sub>O</li>
+        <li><p>A tag <strong>del</strong> deixa os textos <del>riscados</del></p></li>
+        <li>A tag <strong>q</strong> indica uma pequena <q>citação</q>.</li>
+        <li>A tag <strong>blockquote</strong> indica uma longa <blockquote cite="coloque a fonte da citação aqui">citação</blockquote>.</li>
+        <li>A tag <strong>bdo</strong> é responsável por mudar a diração do texto, exemplo a seguir:
+            <ul><li>Este é o texto sem o bdo</li>
+                <li><bdo dir="rtl">Este é o texto com a tag bdo</bdo></li></ul>
+
+            <p>a tag bdo tem um atributo chamado <strong>dir</strong> que pode ser ltr (Left-To-Right) ou rtl(Right-To-Left)</p>
+        </li>
+        <li>A tag <strong>abbr</strong> é responsável pela abreviação de algum texto, como a sigla <abbr title="Instituto Federal de São Paulo">IFSP</abbr>.</li>
+
+        <li>Para comentar é só utilizar <strong>"< !--"</strong> (sem os espaços), comentar o que quiser no código e finalizar com <strong>"-->"</strong> (sem espaços também) que não irá aparecer no browser.</li>
+        <!--comentário de exemplo-->
+    
+    </ul>
+</div>
+        
         <div id="listas">
             <h2 class="title-menu">Listas</h2>
 
@@ -117,6 +151,8 @@
 
         <div id="links">
             <h2 class="title-menu">Links</h2>
+
+            <p>A tag âncora <strong>a</strong> </p>
 
             <p>A seguir temos uma tag âncora <strong>a</strong>, com uma tag <strong>img</strong> e usando o
                 <strong>target="_blank"</strong> para abrir em uma nova Aba:
