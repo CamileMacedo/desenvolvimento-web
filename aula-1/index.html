@@ -1,43 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Este é o título do documento!</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
+
 <body>
     <header>
-        <h1>Este é o elemento <strong>h1</strong></h1>
-        <h2>Este é o elemento <strong>h2</strong></h2>
-        <h3>Este é o elemento <strong>h3</strong></h3>
-        <h4>Este é o elemento <strong>h4</strong></h4>
-        <h5>Este é o elemento <strong>h5</strong></h5>
-        <h6>Este é o elemento <strong>h6</strong></h6>
+        <h1>Este é o elemento <strong>h1</strong> e está dentro da tag <strong>header</strong></h1>
+
+        <div id="menu">
+            <a href="#headers-h2-h6"> Títulos em HTMl</a>
+            <a href="#listas">Listas Ordenadas e Desordenadas</a>
+            <a href="#images">Imagens</a>
+            <a href="#links">Links</a>
+        </div>
+
+        <p style="color: black; margin: 0;">Contém somente os elemetos vistos em aula.</p>
     </header>
 
-    <p>Este é o elemento <strong>p</strong> (parágrafo)</p>
+    <div id="content">
+        <div id="headers-h2-h6">
+            <h2 class="title-menu">Títulos</h2>
+            <h2>Este é o elemento h2</h2>
+            <h3>Este é o elemento h3</h3>
+            <h4>Este é o elemento h4</h4>
+            <h5>Este é o elemento h5</h5>
+            <h6>Este é o elemento h6</h6>
+        </div>
 
-    <ol>
-        <p>Este é a lista ordenada, feita pela tag <strong>ol</strong>, e cada elemento dentro dela utiliza a tag <strong>li</strong></p>
-        <li>elemento x</li>
-        <li>elemento y</li>
-        <li>elemento z</li>
-    </ol>
+        <p>Este é o elemento <strong>p</strong> (parágrafo)</p>
 
-    <ul>
-        <p>Este é a lista desordenada, feita pela tag <strong>ul</strong>, e cada elemento dentro dela utiliza a tag <strong>li</strong></p>
-        <li>elemento x</li>
-        <li>elemento y</li>
-        <li>elemento z</li>
-    </ul>
+        <div id="listas">
+            <h2 class="title-menu">Listas</h2>
 
-    <p>A seguir temos uma imagem, sendo mostrada através do elemento img, usasndo o caminho relativo (src="./images/loog-ifsp-bra.jpg"):</p>
-    <img class='if-image' src="./images/loog-ifsp-bra.jpg">
-    <p>A seguir temos uma imagem, sendo mostrada através do elemento img, usasndo o caminho relativo (src="https://bra.ifsp.edu.br/images/Imagem_Noticias/destaquesRET/noticia_IFSP-BRA-ret.jpg"):</p>
+            <h3>Lista Ordenada (ol)</h3>
+            <ol>
+                <p>Este é a lista ordenada, feita pela tag <strong>ol</strong>, e cada elemento dentro dela utiliza a
+                    tag
+                    <strong>li</strong>
+                </p>
+                <li>elemento x</li>
+                <li>elemento y</li>
+                <li>elemento z</li>
+            </ol>
 
-    <p>Com o CSS, coloquei a header com o background verde, uma borda na imagem e arredondei a borda</p>
+            <h3>Lista Desordenada (ul)</h3>
+            <ul>
+                <p>Este é a lista desordenada, feita pela tag <strong>ul</strong>, e cada elemento dentro dela utiliza a
+                    tag
+                    <strong>li</strong>
+                </p>
+                <li class="list-ul">elemento x (com class = list-ul)</li>
+                <li class="list-ul">elemento y (com class = list-ul)</li>
+                <li>elemento z</li>
+            </ul>
+
+            <h3>Lista Alinhada (ul)</h3>
+            <ul>
+                <li>Frutas (li)</li>
+                <ul>
+                    <li>Maçã (ul > li)</li>
+                    <li>Banana</li>
+                    <li>Uva</li>
+                </ul>
+                <li>Vegetais</li>
+                <ul>
+                    <li>Cenoura</li>
+                    <li>Tomate</li>
+                </ul>
+            </ul>
+
+            <h3>Listas de Descrição (dl)</h3>
+            <dl>
+                <dt>HTML (dt)</dt>
+                <dd>Linguagem de marcação para criação de páginas web. (dd)</dd>
+
+                <dt>CSS</dt>
+                <dd>Linguagem de estilização para dar estilo às páginas web.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Linguagem de programação para tornar páginas web interativas.</dd>
+            </dl>
+        </div>
+
+        <div id="images">
+            <h2 class="title-menu">Imagens</h2>
+            <div class="div-img">
+                <p>A seguir temos uma imagem, sendo mostrada através do elemento img, usando o caminho relativo
+                </p>
+                <p class="example"> (src="./images/loog-ifsp-bra.jpg"):</p>
+
+            </div>
+            <img class='if-image' src='images/logo-ifsp-bra.jpg' alt="atributo alt da imagem">
+            <div class="div-img">
+                <p>A seguir temos uma imagem, sendo mostrada através do elemento img, usando o caminho absoluto
+                </p>
+                <a href="https://bra.ifsp.edu.br/images/Imagem_Noticias/destaquesRET/noticia_IFSP-BRA-ret.jpg">
+                    (https://bra.ifsp.edu.br/images/Imagem_Noticias/destaquesRET/noticia_IFSP-BRA-ret.jpg)
+                </a>:
+                </p>
+
+            </div>
+            <img class='if-image'
+                src="https://bra.ifsp.edu.br/images/Imagem_Noticias/destaquesRET/noticia_IFSP-BRA-ret.jpg"
+                alt="atributo alt da imagem">
+            <p>Com o CSS, coloquei a header com o background verde, uma borda na imagem e arredondei a borda, alguns
+                elementos
+                estão personalizados </p>
+
+        </div>
+
+        <div id="links">
+            <h2 class="title-menu">Links</h2>
+
+            <p>A seguir temos uma tag âncora <strong>a</strong>, com uma tag <strong>img</strong> e usando o
+                <strong>target="_blank"</strong> para abrir em uma nova Aba:
+            </p>
+
+            <div class="title-menu" style="display: flex; padding: 1rem;">
+                <p>Vá para o site do IF clicando na imagem:</p>
+                <a target="_blank" style="margin-left: 10px;" href="https://bra.ifsp.edu.br/">
+                    <img width="100px" src="images/logo-ifsp-bra.jpg" alt="alt da imagem">
+                </a>
+            </div>
+
+            <ul>
+                <li>Use o elemento <strong>a</strong> para definir um link</li>
+                <li>Use o atributo <strong>href</strong> para definir o endereço do link</li>
+                <li>Use o atributo <strong>target</strong> para definir onde abrir o documento vinculado</li>
+                <li>Use o elemento <strong>img</strong> (dentro de <strong>a</strong> ) para usar uma imagem como link
+                </li>
+            </ul>
+        </div>
+    </div>
 
 </body>
+
 </html>
