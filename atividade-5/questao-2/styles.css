@@ -1,0 +1,11 @@
+.box2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.box3 {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
